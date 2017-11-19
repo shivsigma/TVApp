@@ -269,7 +269,8 @@
 
 -(void)productNext{
     NewProductCalanderView * view = [NewProductCalanderView initViewNewProductInfo:nil Delegate:nil];
-    [[KGModal sharedInstance]hideAnimated:view];
+//    [[KGModal sharedInstance]hideAnimated:view];
+    [[KGModal sharedInstance] showWithContentView:view];
 }
 
 
